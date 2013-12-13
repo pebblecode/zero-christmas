@@ -21,7 +21,7 @@
 // HELPERS: helper classes. clear-fix etc 
 @import "_helpers";
 
-// LAYOUT: grids, wraps etc
+// LAYOUT: grids wraps etc
 @import "_layout";
 
 // TYPOGRAPHY:
@@ -46,3 +46,89 @@
 // DEV-STYLES
 //===============================================================================
 // playground for development
+.zero-x {
+  color: transparent !important;
+  background: black !important;
+}
+
+b, big, i, small, tt
+abbr, acronym, cite, code, dfn, em, kbd, strong, samp, var
+a, bdo, br, img, map, object, q, script, span, sub, sup
+button, input, label, select, textarea {
+
+  &.zero-x {
+    display: inline-block !important;  
+  }
+}
+
+.zero-x-image{
+  display: inline-block!important;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black !important;
+  }
+}
+
+// img.zero-x {
+//   position: relative;
+
+//   &:after{
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: red;
+//     z-index: 999;
+//   }
+
+// }
+
+.z-x-1 {
+  transform: rotate( 1deg ) !important;
+  -ms-transform: rotate( 1deg ) !important;
+  -moz-transform: rotate( 1deg ) !important;
+  -webkit-transform: rotate( 1deg ) !important;
+  -o-transform: rotate( 1deg ) !important;
+}
+
+.z-x-2 {
+  transform: rotate( 2deg ) !important;
+  -ms-transform: rotate( 2deg ) !important;
+  -moz-transform: rotate( 2deg ) !important;
+  -webkit-transform: rotate( 2deg ) !important;
+  -o-transform: rotate( 2deg ) !important;
+}
+
+.z-x-3 {
+  transform: rotate( -1deg ) !important;
+  -ms-transform: rotate( -1deg ) !important;
+  -moz-transform: rotate( -1deg ) !important;
+  -webkit-transform: rotate( -1deg ) !important;
+  -o-transform: rotate( -1deg ) !important; 
+}
+
+.z-x-4 {
+  transform: rotate( -2deg ) !important;
+  -ms-transform: rotate( -2deg ) !important;
+  -moz-transform: rotate( -2deg ) !important;
+  -webkit-transform: rotate( -2deg ) !important;
+  -o-transform: rotate( -2deg ) !important; 
+}
+
+.red {
+  color: red;
+}
+
+.box {
+  height: 3em;
+  width: 3em;
+}
