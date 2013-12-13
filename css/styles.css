@@ -496,22 +496,23 @@ h6 {
     padding: 0;
   }
 }
-/* line 48 */
-.logo {
-  position: relative;
+/* line 78 */
+.bookmark {
+  text-decoration: none;
+  color: transparent;
   display: block;
-  max-width: 16em;
+  width: 16em;
   margin: 0 auto;
-  width: 100%;
+  height: 16em;
   margin-top: 90px;
+  position: relative;
+  background-image: url(../img/logo.svg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-/* line 56 */
-.logo img {
-  max-width: 16em;
-  width: 100%;
-}
-/* line 61 */
-.logo:before {
+/* line 92 */
+.bookmark:before {
   content: "";
   position: absolute;
   top: 0;
@@ -522,26 +523,35 @@ h6 {
   border-radius: 50%;
   z-index: -1;
 }
+/* line 104 */
+.bookmark:hover {
+  color: transparent;
+}
+/* line 107 */
+.bookmark:hover:before {
+  background-color: #171f2c;
+}
 
-/* line 74 */
+/* line 113 */
 h1 {
   font-weight: 100;
   margin: 1em 0 1.5em;
   text-align: center;
   color: #8baacf;
 }
-/* line 80 */
+/* line 119 */
 h1 span {
   border-bottom: 2px solid #8baacf;
   padding: 0 2em;
 }
 
-/* line 86 */
+/* line 125 */
 p {
   color: #8baacf;
+  font-weight: 100;
 }
 
-/* line 90 */
+/* line 130 */
 p,
 blockquote,
 .author {
@@ -551,7 +561,7 @@ blockquote,
   padding: 0;
 }
 
-/* line 99 */
+/* line 139 */
 blockquote {
   max-width: 27.82609em;
   font-size: 1.15em;
@@ -559,7 +569,7 @@ blockquote {
   text-indent: -.5em;
 }
 
-/* line 106 */
+/* line 146 */
 .author {
   display: block;
   text-align: right;
@@ -568,18 +578,18 @@ blockquote {
   margin-bottom: 3em;
 }
 
-/* line 114 */
+/* line 154 */
 footer {
   opacity: .3;
   font-size: .7em;
   margin: 14em 0 12em;
 }
-/* line 119 */
+/* line 159 */
 footer p {
   margin-bottom: 0;
   max-width: 45.71429em;
 }
-/* line 126 */
+/* line 166 */
 footer a:hover {
   color: white;
 }
