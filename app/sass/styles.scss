@@ -45,3 +45,86 @@
 //===============================================================================
 // DEV-STYLES
 //===============================================================================
+.logo {
+  position: relative;
+  display: block;
+  max-width: 16em;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 90px;
+
+  img {
+    max-width: 16em;
+    width: 100%;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1b2433;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+h1 {
+  font-weight: 100;
+  margin: 1em 0 1.5em;
+  text-align: center;
+  color: darken($ink, 20);
+
+  span{
+    border-bottom: 2px solid darken($ink, 20);
+    padding: 0 2em;
+  }
+}
+
+p {
+  color: darken($ink, 20);
+}
+
+p,
+blockquote,
+.author {
+  max-width: 32em;
+  margin: 0 auto 1.5em;
+  border: 0;
+  padding: 0;
+}
+
+blockquote {
+  max-width: ( 32em / 1.15 );
+  font-size: 1.15em;
+  margin-bottom: .3em;
+  text-indent: -.5em;
+}
+
+.author{
+  display: block;
+  text-align: right;
+  margin-top: 0;
+  color: darken($ink, 50);
+  margin-bottom: 3em;
+}
+
+footer {
+  opacity: .3;
+  font-size: .7em;
+  margin: 14em 0 12em;
+
+  p {
+    margin-bottom: 0;
+    max-width: ( 32em / .7 );
+  }
+
+  a {
+
+    &:hover {
+      color: white;
+    }
+  }
+}
