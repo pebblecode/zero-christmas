@@ -486,6 +486,16 @@ h6 {
   margin-bottom: 0.8em;
 }
 
+@media only screen and (max-width: 510px) {
+  /* line 5, /Users/mark/repos/zero-christmass/app/sass/_media-queries.scss */
+  body {
+    font-size: .8em;
+  }
+  /* line 8, /Users/mark/repos/zero-christmass/app/sass/_media-queries.scss */
+  body h1 span {
+    padding: 0;
+  }
+}
 /* line 48 */
 .logo {
   position: relative;
