@@ -593,3 +593,18 @@ footer p {
 footer a:hover {
   color: white;
 }
+
+.bookmark-small {
+  width: 8em;
+  height: 8em;
+  margin-top: 3em;
+}
+
+.demo {
+  max-width: 32em;
+  margin: 0 auto 1em;
+}
+
+.demo img{
+  width: 100%;
+}
